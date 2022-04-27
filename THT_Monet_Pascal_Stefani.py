@@ -20,9 +20,10 @@ def automated_search(filename):
         driver = webdriver.Chrome("./chromedriver")
 
         driver.get("https://google.com")
-
-        g_acc = driver.find_element_by_id("L2AGLb")
-        g_acc.click()
+        
+#        I needed this part to accept google cookie settings, if this popup doesnt show up, this part isnt needed
+#        g_acc = driver.find_element_by_id("L2AGLb")
+#        g_acc.click()
 
         g_search = driver.find_element_by_name("q")
         g_search.send_keys(i)

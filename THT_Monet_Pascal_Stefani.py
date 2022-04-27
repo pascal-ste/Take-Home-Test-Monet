@@ -21,7 +21,7 @@ def automated_search(filename):
 
         driver.get("https://google.com")
         
-#        I needed this part to accept google cookie settings, if this popup doesnt show up, this part isnt needed
+#        I needed this part to accept google cookie settings. If this pop-up doesn't show up, this part isn't needed.
 #        g_acc = driver.find_element_by_id("L2AGLb")
 #        g_acc.click()
 
